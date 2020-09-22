@@ -1,0 +1,1206 @@
+{
+    "页面标准结构": {
+        "prefix": "ue-html",
+        "body": [
+            "<!DOCTYPE HTML>",
+            "<html>",
+            "<head>",
+            "    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" />",
+            "    <title>Mue</title>",
+            "    <meta name=\"format-detection\" content=\"telephone=no\" />",
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no\">",
+            "    <link rel=\"stylesheet\" href=\"css/mue.css\" />",
+            "    <link rel=\"stylesheet\" href=\"css/style.css\" />",
+            "</head>",
+            "<body>",
+            "",
+            "    <!-- 依赖库 手机调试的js引用顺序如下 -->",
+            "    <script src=\"js/zepto.js\"></script>",
+            "    <script src=\"js/mue.js\"></script>",
+            "    <script>",
+            "        mue.ready(function () {",
+            "            // 这里写业务及控件初始化",
+            "            ",
+            "        })",
+            "    </script>",
+            "</body>",
+            "</html>"
+        ]
+    },
+
+    "mue标准页面结构": {
+        "prefix": "ue-page",
+        "body": [
+            "<div class=\"mue-page mue-box-vertical\">",
+            "    <header>",
+            "       <div class=\"mue-bar\">",
+            "        <div class=\"mue-bar-left\">",
+            "            <a class=\"mue-btn\" onclick=\"mue.back();\"><i class=\"icon-back\"></i></a>",
+            "        </div>",
+            "        <div class=\"mue-bar-main\">Mue页面标题</div>",
+            "        <div class=\"mue-bar-right\">",
+            "            <!-- 右边按钮 -->",
+            "        </div>",
+            "       </div>",
+            "    </header>",
+            "    <main>",
+            "        <!-- 正文内容 -->",
+            "    </main>",
+            "    <footer>",
+            "        <!-- 底部内容 -->",
+            "    </footer>",
+            "</div>"
+        ]
+    },
+
+    "mue标准页面box布局结构": {
+        "prefix": "ue-page-box",
+        "body": [
+            "<div class=\"mue-page mue-box-vertical\">",
+            "    <header>",
+            "       <div class=\"mue-bar\">",
+            "          <div class=\"mue-bar-left\">",
+            "              <a class=\"mue-btn\" onclick=\"mue.back();\"><i class=\"icon-back\"></i></a>",
+            "          </div>",
+            "          <div class=\"mue-bar-main\">Mue页面标题</div>",
+            "          <div class=\"mue-bar-right\">",
+            "            <!-- 右边按钮 -->",
+            "          </div>",
+            "        </div>",
+            "    </header>",
+            "    <main>",
+            "        <!-- 正文内容 -->",
+            "    </main>",
+            "    <footer>",
+            "        <!-- 底部内容 -->",
+            "    </footer>",
+            "</div>"
+        ]
+    },
+
+    "折叠菜单结构": {
+        "prefix": "ue-accordion",
+        "body": [
+            "<dl id=\"uiAccordion\" class=\"mue-accordion\">",
+            "    <dt class=\"mue-btn mue-box\">",
+            "        <div class=\"span1\">折叠菜单</div>",
+            "        <i class=\"icon-accordion\"></i>",
+            "    </dt>",
+            "    <dd>",
+            "        折叠菜单内容",
+            "    </dd>",
+            "</dl>"
+        ]
+    },
+
+    "单页路由结构": {
+        "prefix": "ue-router",
+        "body": [
+            "<!DOCTYPE HTML>",
+            "<html lang=\"en-US\">",
+            "<head>",
+            "    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" />",
+            "    <title>mue-单页模板</title>",
+            "    <meta name=\"format-detection\" content=\"telephone=no\" />",
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no\">",
+            "    <link rel=\"stylesheet\" href=\"css/mue.css\" />",
+            "    <link rel=\"stylesheet\" href=\"css/style.css\" />",
+            "</head>",
+            "<body>",
+            "    <div id=\"mue-router\"></div>",
+            "    <script src=\"js/zepto.js\"></script>",
+            "    <script src=\"js/mue.js\"></script>",
+            "</body>",
+            "</html>"
+        ]
+    },
+
+    "下拉刷新列表结构": {
+        "prefix": "ue-list",
+        "body": [
+            "<!-- 列表控件 html 对应的结构:  -->",
+            "<div id=\"uiList\" class=\"mue-scroll\">",
+            "    <div class=\"mue-scroll-head\"></div>",
+            "    <div class=\"mue-scroll-main\">",
+            "        <ul class=\"mue-list\">",
+            "        </ul>",
+            "    </div>",
+            "    <div class=\"mue-scroll-foot\"></div>",
+            "</div>"
+        ]
+    },
+
+    "缩略图列表": {
+        "prefix": "ue-list-thumbnail",
+        "body": [
+            "<ul class=\"mue-list mue-list-thumbnail\">",
+            "    <li class=\"mue-btn mue-box\">",
+            "        <div class=\"mue-thumbnail\"><img src=\"images/list-img1.png\" alt=\"\"></div>",
+            "        <div class=\"span1\">",
+            "            <h3 class=\"item-title\">商品标题</h3>",
+            "            <p class=\"item-text\">天河区岑村</p>",
+            "            <p class=\"item-text\">3公里</p>",
+            "        </div>",
+            "        <span class=\"price\"><i>￥</i>50</span>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "单选列表": {
+        "prefix": "ue-list-radio",
+        "body": [
+            "<ul class=\"mue-list\">",
+            "    <li class=\"mue-btn mue-box mue-btn-line\">",
+            "        <div class=\"span1\">",
+            "            <label class=\"mue-label\">单选</label>",
+            "        </div>",
+            "        <input type=\"radio\" class=\"mue-choose\" name=\"interest\" value=\"\" text=\"\">",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "图标列表": {
+        "prefix": "ue-list-icon",
+        "body": [
+            "<ul class=\"mue-list\">",
+            "    <li class=\"mue-btn mue-box\">",
+            "        <div class=\"icon\"><img src=\"images/applogo.png\" alt=\"\"></div>",
+            "        <div class=\"span1\">文本</div>",
+            "        <i class=\"icon-listright\"></i>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "箭头列表": {
+        "prefix": "ue-list-arrow",
+        "body": [
+            "<ul class=\"mue-list\">",
+            "    <li class=\"mue-btn mue-box\">",
+            "        <div class=\"span1\">文本</div>",
+            "        <i class=\"icon-listright\"></i>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "多选列表": {
+        "prefix": "ue-list-checkbox",
+        "body": [
+            "<ul class=\"mue-list\">",
+            "    <li class=\"mue-btn mue-box mue-btn-line\">",
+            "        <div class=\"span1\">",
+            "            <label class=\"mue-label\">多选</label>",
+            "        </div>",
+            "        <input type=\"checkbox\" class=\"mue-choose\" name=\"interest\" value=\"\" text=\"\">",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "分组列表": {
+        "prefix": "ue-list-group",
+        "body": [
+            "<ul class=\"mue-list\">",
+            "    <li class=\"mue-btn mue-btn-title\">",
+            "        分组标题",
+            "    </li>",
+            "    <li class=\"mue-btn mue-box\">",
+            "        <div class=\"span1\">文本</div>",
+            "        <i class=\"icon-listright\"></i>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "横向滚动导航": {
+        "prefix": "ue-navbar",
+        "body": [
+            "<div class=\"mue-navbar\">",
+            "  <ul class=\"mue-nav\">",
+            "    <!-- <li>之间不能有空隙 -->",
+            "    <li class=\"mue-btn\">首页</li><li class=\"mue-btn\">新闻</li>",
+            "  </ul>",
+            "</div>"
+        ]
+    },
+
+    "导航菜单结构": {
+        "prefix": "ue-nav",
+        "body": [
+            "<ul class=\"mue-nav\">",
+            "    <li class=\"mue-btn\">文本</li>",
+            "</ul>"
+        ]
+    },
+    "导航菜单图标结构": {
+        "prefix": "ue-nav-icon",
+        "body": [
+            "<ul class=\"mue-nav\">",
+            "    <li class=\"mue-btn mue-box-vertical\">",
+            "        <i class=\"icon-home\"></i>",
+            "        <div class=\"span1\">文本</div>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "表单展示": {
+        "prefix": "ue-form",
+        "body": [
+            "<ul class=\"mue-list\">",
+            "    <li class=\"mue-btn mue-box\">",
+            "        <label class=\"mue-label\">帐号</label>",
+            "        <div class=\"span1\">",
+            "            <div class=\"mue-value\">username</div>",
+            "        </div>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "表单编辑": {
+        "prefix": "ue-form-edit",
+        "body": [
+            "<ul class=\"mue-list\">",
+            "    <li class=\"mue-btn mue-box clearactive\">",
+            "        <label class=\"mue-label\">帐号</label>",
+            "        <div class=\"span1\">",
+            "            <input type=\"text\" class=\"mue-input\" value=\"\" placeholder=\"请输入帐号\">",
+            "        </div>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "表单底部按钮": {
+        "prefix": "ue-form-submit",
+        "body": [
+            "<div class=\"container-y\">",
+            "    <div class=\"mue-box-space\">",
+            "        <div class=\"span1\">",
+            "            <div class=\"mue-btn round\">重置</div>",
+            "        </div>",
+            "        <div class=\"span1\">",
+            "            <div class=\"mue-btn round primary\">提交</div>",
+            "        </div>",
+            "    </div>",
+            "</div>"
+        ]
+    },
+
+    "单选框": {
+        "prefix": "ue-radio",
+        "body": [
+            "<input type=\"radio\" class=\"mue-radio\" name=\"\" value=\"\">"
+        ]
+    },
+
+    "多选框-圆圈": {
+        "prefix": "ue-choose",
+        "body": [
+            "<input type=\"checkbox\" class=\"mue-choose\" name=\"\" value=\"\">"
+        ]
+    },
+
+    "多选框": {
+        "prefix": "ue-checkbox",
+        "body": [
+            "<input type=\"checkbox\" class=\"mue-checkbox\" name=\"\" value=\"\">"
+        ]
+    },
+    "收藏": {
+        "prefix": "ue-like",
+        "body": [
+            "<input type=\"checkbox\" class=\"mue-like warning\" name=\"\" value=\"\">"
+        ]
+    },
+    "选择按钮": {
+        "prefix": "ue-check",
+        "body": [
+            "<input type=\"radio\" class=\"mue-check\" uncheck=\"关注\" check=\"已关注\" value=\"\">"
+        ]
+    },
+
+    "自定义多选框": {
+        "prefix": "ue-checkbox-custom",
+        "body": [
+            "<div class=\"mue-check\">",
+            "    <input id=\"uid\" type=\"radio\" ><label for=\"uid\">3:50元</label>",
+            "</div>"
+        ]
+    },
+
+    "输入框": {
+        "prefix": "ue-input",
+        "body": [
+            "<div class=\"mue-input\">",
+            "  <input type=\"text\" value=\"\" placeholder=\"请输入\">",
+            "</div>"
+        ]
+    },
+
+    "图标输入框": {
+        "prefix": "ue-input-icon",
+        "body": [
+            "<div class=\"mue-input\">",
+            "    <i class=\"icon-search\"></i>",
+            "    <input type=\"text\" value=\"\" placeholder=\"请输入关键字\">",
+            "</div>"
+        ]
+    },
+
+    "滑动条": {
+        "prefix": "ue-range",
+        "body": [
+            "<input type=\"range\" class=\"mue-range\" min=\"0\" max=\"255\" value=\"100\">"
+        ]
+    },
+
+    "切换按钮": {
+        "prefix": "ue-switch",
+        "body": [
+            "<input type=\"checkbox\" class=\"mue-switch\" name=\"\" value=\"\">"
+        ]
+    },
+
+    "按钮": {
+        "prefix": "ue-btn",
+        "body": [
+            "<div class=\"mue-btn\" href=\"\">按钮</div>"
+        ]
+    },
+    "文本按钮": {
+        "prefix": "ue-btn-text",
+        "body": [
+            "<div class=\"mue-btn-text\" >文本按钮</div>"
+        ]
+    },
+    "图标按钮": {
+        "prefix": "ue-btn-icon",
+        "body": [
+            "<div class=\"mue-btn mue-box\" >",
+            "   <i class=\"icon icon-home\"></i>",
+            "   <div class=\"span1\">图标按钮</div>",
+            "</div>"
+        ]
+    },
+    "图片按钮": {
+        "prefix": "ue-btn-img",
+        "body": [
+            "<div class=\"mue-btn mue-box\" >",
+            "   <div class=\"icon\"><img src=\"images/applogo.png\" /></div>",
+            "   <div class=\"span1\">图片按钮</div>",
+            "</div>"
+        ]
+    },
+    "图片组": {
+        "prefix": "ue-btn-group",
+        "body": [
+            "<ul class=\"mue-group mini\">",
+            "   <!--li 之间不要有间隙 -->",
+            "   <li class=\"mue-btn primary\">按钮1</li><li class=\"mue-btn\">按钮2</li><li class=\"mue-btn\">按钮3</li>",
+            "</ul>"
+        ]
+    },
+    "弹性布局": {
+        "prefix": "ue-box",
+        "body": [
+            "<div class=\"mue-box\">",
+            "  <div class=\"span1\"><!--自适应内容--></div>",
+            "</div>"
+        ]
+    },
+
+    "弹性布局有间隙": {
+        "prefix": "ue-box-space",
+        "body": [
+            "<div class=\"mue-box-space\">",
+            "    <div class=\"span1\"><!--自适应内容--></div>",
+            "</div>"
+        ]
+    },
+
+    "百分比布局-12等分": {
+        "prefix": "ue-fluid",
+        "body": [
+            "<div class=\"mue-fluid\">",
+            "  <div class=\"span6\">内容</div>",
+            "  <div class=\"span6\">内容</div>",
+            "</div>"
+        ]
+    },
+    "百分比布局-5列等分": {
+        "prefix": "ue-fluid-5",
+        "body": [
+            "<div class=\"mue-fluid-5\">",
+            "  <div class=\"span1\">内容</div>",
+            "  <div class=\"span1\">内容</div>",
+            "</div>"
+        ]
+    },
+
+    "百分比布局-间隙": {
+        "prefix": "ue-fluid-space",
+        "body": [
+            "<div class=\"mue-fluid-space\">",
+            "  <div class=\"span6\">内容</div>",
+            "  <div class=\"span6\">内容</div>",
+            "</div>"
+        ]
+    },
+
+
+    "上拉菜单结构": {
+        "prefix": "ue-actionsheet",
+        "body": [
+            "<div id=\"btnOpen\" class=\"mue-btn\">打开下拉菜单</div>"
+        ]
+    },
+
+    "横条结构": {
+        "prefix": "ue-bar",
+        "body": [
+            "<div class=\"mue-bar\">",
+            "    <div class=\"mue-bar-left\">",
+            "        <a class=\"mue-btn\"><i class=\"icon-back\"></i></a>",
+            "    </div>",
+            "    <div class=\"mue-bar-main\">标题</div>",
+            "    <div class=\"mue-bar-right\">",
+            "        <a class=\"mue-btn\"><i class=\"icon-menu\"></i></a>",
+            "    </div>",
+            "</div>"
+        ]
+    },
+
+    "横条-左对齐结构": {
+        "prefix": "ue-bar-side",
+        "body": [
+            "<div class=\"mue-bar mue-bar-side\">",
+            "    <div class=\"mue-bar-left\">",
+            "        <a class=\"mue-btn\"><i class=\"icon-back\"></i></a>",
+            "    </div>",
+            "    <div class=\"mue-bar-main\">标题</div>",
+            "    <div class=\"mue-bar-right\">",
+            "        <a class=\"mue-btn\"><i class=\"icon-search\"></i></a>",
+            "        <a class=\"mue-btn\"><i class=\"icon-menu\"></i></a>",
+            "    </div>",
+            "</div>"
+        ]
+    },
+
+    "header结构": {
+        "prefix": "ue-header",
+        "body": [
+            "<header class=\"mue-bar\">",
+            "    <div class=\"mue-bar-left\">",
+            "        <a class=\"mue-btn\"><i class=\"icon-back\"></i></a>",
+            "    </div>",
+            "    <div class=\"mue-bar-main\">标题</div>",
+            "    <div class=\"mue-bar-right\">",
+            "        <a class=\"mue-btn\"><i class=\"icon-menu\"></i></a>",
+            "    </div>",
+            "</header>"
+        ]
+    },
+    "header-左对齐结构": {
+        "prefix": "ue-header-side",
+        "body": [
+            "<header class=\"mue-bar mue-bar-side\">",
+            "    <div class=\"mue-bar-left\">",
+            "        <a class=\"mue-btn\"><i class=\"icon-back\"></i></a>",
+            "    </div>",
+            "    <div class=\"mue-bar-main\">标题</div>",
+            "    <div class=\"mue-bar-right\">",
+            "        <a class=\"mue-btn\"><i class=\"icon-search\"></i></a>",
+            "        <a class=\"mue-btn\"><i class=\"icon-menu\"></i></a>",
+            "    </div>",
+            "</header>"
+        ]
+    },
+
+    "自定义对话框结构": {
+        "prefix": "ue-dialog",
+        "body": [
+            "<div id=\"uiDialog\" class=\"mue-dialog\">",
+            "    <div class=\"mue-dialog-head\">对话框标题</div>",
+            "    <div class=\"mue-dialog-main\">对话框内容</div>",
+            "    <div class=\"mue-dialog-close\"><i class=\"icon-close\"></i></div>",
+            "</div>"
+        ]
+    },
+
+    "下拉菜单结构": {
+        "prefix": "ue-dropdown",
+        "body": [
+            "<div id=\"uiDropdown\" class=\"mue-dropdown\">",
+            "    <div class=\"mue-btn mue-box\" >",
+            "        <div class=\"span1\">菜单名称</div>",
+            "        <i class=\"icon-dropdown\"></i>",
+            "    </div>",
+            "</div>"
+        ]
+    },
+
+    "侧滑列表结构": {
+        "prefix": "ue-listview",
+        "body": [
+            "<ul id=\"uiListview\" class=\"mue-listview\">",
+            "    <li>",
+            "        <div class=\"mue-btn mue-box\">",
+            "            <div class=\"span1\">左滑动出现菜单</div>",
+            "            <i class=\"icon-listright\"></i>",
+            "        </div>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "侧滑列表结构-自定义按钮": {
+        "prefix": "ue-listview-custom",
+        "body": [
+            "<ul id=\"uiListview\" class=\"mue-listview\">",
+            "    <li status=\"1\">",
+            "        <div class=\"mue-btn mue-box\">",
+            "            <div class=\"span1\">手动渲染</div>",
+            "            <i class=\"icon-listright\"></i>",
+            "        </div>",
+            "        <div class=\"mue-listview-menu swipeleft\" data-moving=\"200\">",
+            "            <div class=\"mue-btn btn-red\">删除</div>",
+            "        </div>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "数字条结构": {
+        "prefix": "ue-number",
+        "body": [
+            "<div id=\"uiNumber\" class=\"mue-number\"></div>"
+        ]
+    },
+
+    "面板结构": {
+        "prefix": "ue-panel",
+        "body": [
+            "<div class=\"mue-panel\">",
+            "    <div class=\"mue-panel-head\">面板标题</div>",
+            "    <div class=\"mue-panel-main\">面板内容</div>",
+            "    <div class=\"mue-panel-foot\">面板底部</div>",
+            "</div>"
+        ]
+    },
+
+    "日期控件结构": {
+        "prefix": "ue-pickerdate",
+        "body": [
+            "<input type=\"text\" id=\"pickerdateInput\" readonly>"
+        ]
+    },
+
+    "进度条结构": {
+        "prefix": "ue-progress",
+        "body": [
+            "<progress class=\"mue-progress\" max=\"100\" value=\"30\"></progress>"
+        ]
+    },
+
+    "进度条自定义结构": {
+        "prefix": "ue-progress-custom",
+        "body": [
+            "<div class=\"mue-progress\">",
+            "   <div class=\"mue-progress-cell\" style=\"width:80%\"></div>",
+            "</div>"
+        ]
+    },
+
+    "星级评分": {
+        "prefix": "ue-rating",
+        "body": [
+            "<div id=\"uiRating\" class=\"mue-rating\"></div>"
+        ]
+    },
+
+    "滚动加载列表结构": {
+        "prefix": "ue-scroll",
+        "body": [
+            "<div id=\"uiScroll\" class=\"mue-scroll\">",
+            "    <div class=\"mue-scroll-head\"></div>",
+            "    <div class=\"mue-scroll-main\">",
+            "        <ul class=\"mue-list\"></ul>",
+            "    </div>",
+            "    <div class=\"mue-scroll-foot\"></div>",
+            "</div>"
+        ]
+    },
+
+    "搜索条结构": {
+        "prefix": "ue-searchbar",
+        "body": [
+            "<!-- 搜索条控件结构 -->",
+            "<div id=\"searchbar\" class=\"mue-searchbar mue-box\">",
+            "    <div class=\"span1\">",
+            "        <div class=\"mue-input\">",
+            "            <i class=\"icon-search\"></i>",
+            "            <input type=\"search\" value=\"\" placeholder=\"请输入关键字\" />",
+            "        </div>",
+            "    </div>",
+            "    <div class=\"btn-search\">搜索</div>",
+            "</div>",
+            "<!-- 列表控件结构 -->",
+            "<div id=\"scrollSearch\" class=\"mue-scroll\">",
+            "    <div class=\"mue-scroll-head\"></div>",
+            "    <div class=\"mue-scroll-main\">",
+            "        <ul class=\"mue-list\">",
+            "        </ul>",
+            "    </div>",
+            "    <div class=\"mue-scroll-foot\"></div>",
+            "</div>"
+        ]
+    },
+
+    "选择列表按钮结构": {
+        "prefix": "ue-select",
+        "body": [
+            "<div id=\"uiSelect\" class=\"mue-select mue-box\">",
+            "    <div class=\"span1\">请选择</div>",
+            "    <i class=\"icon-listright\"></i>",
+            "</div>"
+        ]
+    },
+
+    "选择列表自定义结构": {
+        "prefix": "ue-select-list",
+        "body": [
+            "<ul id=\"uiSelect\" class=\"mue-list\">",
+            "    <li class=\"mue-btn mue-box mue-btn-line\">",
+            "        <div class=\"span1\">",
+            "            <label for=\"choose\">多选</label>",
+            "        </div>",
+            "        <input id=\"choose\" type=\"checkbox\" class=\"mue-choose\" name=\"interest\" value=\"\" text=\"\" checked=\"checked\">",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+    "侧滑栏结构": {
+        "prefix": "ue-sidebar",
+        "body": [
+            "<div id=\"sidebarWrap\" class=\"mue-sidebar-wrap\">",
+            "  <div class=\"mue-sidebar swiperight\">",
+            "    侧滑栏内容 swiperight 为滑动的方向,不同位置修改不同方向",
+            "  </div>",
+            "  <div class=\"mue-page\">",
+            "    页面内容",
+            "  </div>",
+            "</div>"
+        ]
+    },
+
+    "选项卡结构": {
+        "prefix": "ue-tab",
+        "body": [
+            "<div id=\"uiTab\" class=\"mue-tab mue-box-vertical\">",
+            "    <div class=\"mue-tab-head\">",
+            "        <ul class=\"mue-nav\">",
+            "            <!-- 分屏菜单 active 是激活的TAB样式 -->",
+            "            <li class=\"mue-btn active\">Tab1</li>",
+            "            <li class=\"mue-btn\">Tab2</li>",
+            "        </ul>",
+            "    </div>",
+            "    <div class=\"mue-tab-main\">",
+            "        <ul>",
+            "            <li>",
+            "                第1屏",
+            "            </li>",
+            "            <li style=\"display:none;\">",
+            "                第2屏",
+            "            </li>",
+            "        </ul>",
+            "    </div>",
+            "</div>"
+        ]
+    },
+
+    "焦点图结构": {
+        "prefix": "ue-slide",
+        "body": [
+            "<div id=\"uiSlide\" class=\"mue-slide\">",
+            "    <div class=\"mue-slide-main\">",
+            "        <ul>",
+            "            <li>",
+            "                <!--第1屏-->",
+            "                <img src=\"\" alt=\"\">",
+            "                <div class=\"mue-slide-title\">图片标题</div>",
+            "            </li>",
+            "            <li style=\"display:none;\">",
+            "                <!--第2屏-->",
+            "                <img src=\"\" alt=\"\">",
+            "                <div class=\"mue-slide-title\">图片标题</div>",
+            "            </li>",
+            "        </ul>",
+            "    </div>",
+            "</div>"
+        ]
+    },
+
+    "步骤条结构": {
+        "prefix": "ue-stepbar",
+        "body": [
+            "<div id=\"uiStepbar\" class=\"mue-stepbar\"></div>"
+
+        ]
+    },
+
+    "抽屉滑动结构": {
+        "prefix": "ue-swipe",
+        "body": [
+            "<div id=\"uiSwipe\" class=\"mue-swipe\">",
+            "  <div class=\"swiperight\">",
+            "    菜单在左边",
+            "  </div>",
+            "  <div class=\"swipeleft\">",
+            "    菜单在右边",
+            "  </div>",
+            "  <div class=\"swipeup\">",
+            "    菜单在上边",
+            "  </div>",
+            "  <div class=\"swipedown\">",
+            "    菜单在下边",
+            "  </div>",
+            "  <div class=\"mue-page\">",
+            "    页面正文",
+            "  </div>",
+            "</div>"
+        ]
+    },
+
+    "表格结构": {
+        "prefix": "ue-table",
+        "body": [
+            "<table class=\"mue-table\">",
+            "    <tr>",
+            "        <td>1</td>",
+            "    </tr>",
+            "</table>"
+        ]
+    },
+
+    "图片结构": {
+        "prefix": "ue-pic",
+        "body": [
+            "<div class=\"mue-pic\">",
+            "    <div class=\"mue-pic-img\"><img src=\"images/list-img1.png\" ></div>",
+            "    <div class=\"mue-pic-title\">图片标题</div>",
+            "</div>"
+        ]
+    },
+
+    "图片列表结构": {
+        "prefix": "ue-list-pic",
+        "body": [
+            "<ul class=\"mue-list-pic mue-fluid-space-2\">",
+            "    <li>",
+            "        <div class=\"mue-pic\">",
+            "            <div class=\"mue-pic-img\"><img src=\"images/list-img1.png\" ></div>",
+            "            <div class=\"mue-pic-title\">图片标题</div>",
+            "        </div>",
+            "    </li>",
+            "    <li>",
+            "        <div class=\"mue-pic\">",
+            "            <div class=\"mue-pic-img\"><img src=\"images/list-img1.png\" alt=\"\" ></div>",
+            "            <div class=\"mue-pic-title\">图片标题</div>",
+            "        </div>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+
+
+    "红点提醒": {
+        "prefix": "ue-badges",
+        "body": [
+            "<span class=\"mue-badges\">5</span>"
+        ]
+    },
+    "静态提醒": {
+        "prefix": "ue-hint",
+        "body": [
+            "<div class=\"mue-hint primary\"><i class=\"icon-successfill\"></i>消息提醒</div>"
+        ]
+    },
+    "角标": {
+        "prefix": "ue-sub",
+        "body": [
+            "<div class=\"mue-sub\" data-sub=\"new\">div必须有宽高才能正确展示</div>"
+        ]
+    },
+    "标签": {
+        "prefix": "ue-tag",
+        "body": [
+            "<div class=\"mue-fluid-space-5\">",
+            "   <div class=\"span1\"><input type=\"radio\" name=\"tag\" class=\"mue-check\" uncheck=\"标签1\" check=\"标签1\" value=\"tag1\"></div>",
+            "   <div class=\"span1\"><input type=\"radio\" name=\"tag\" class=\"mue-check\" uncheck=\"标签2\" check=\"标签2\" value=\"tag2\"></div>",
+            "   <div class=\"span1\"><input type=\"radio\" name=\"tag\" class=\"mue-check\" uncheck=\"标签3\" check=\"标签3\" value=\"tag3\"></div>",
+            "   <div class=\"span1\"><input type=\"radio\" name=\"tag\" class=\"mue-check\" uncheck=\"标签4\" check=\"标签4\" value=\"tag4\"></div>",
+            "   <div class=\"span1\"><input type=\"radio\" name=\"tag\" class=\"mue-check\" uncheck=\"标签5\" check=\"标签5\" value=\"tag5\"></div>",
+            "</div>"
+        ]
+    },
+    "图标": {
+        "prefix": "ue-icon",
+        "body": [
+            "<i class=\"icon-success\"></i>"
+        ]
+    },
+    "图标背景": {
+        "prefix": "ue-icon-bg",
+        "body": [
+            "<div class=\"mue-icon primary\">",
+            "   <i class=\"icon-success\"></i>",
+            "</div>"
+        ]
+    },
+    "图标九宫格": {
+        "prefix": "ue-icon-grid",
+        "body": [
+            "<ul class=\"mue-nav-icon mue-fluid-3\">",
+            "   <li class=\"mue-btn\">",
+            "       <i class=\"icon-doubt primary\"><span class=\"mue-badges\">5</span></i>",
+            "       <div class=\"span1\">线条图标</div>",
+            "   </li>",
+            "   <li class=\"mue-btn\">",
+            "       <i class=\"icon-doubt primary\"></i>",
+            "       <div class=\"span1\">线条图标</div>",
+            "   </li>",
+            "   <li class=\"mue-btn\">",
+            "       <i class=\"icon-doubt primary\"></i>",
+            "       <div class=\"span1\">线条图标</div>",
+            "   </li>",
+            "</ul>"
+        ]
+    },
+
+    "图标背景九宫格": {
+        "prefix": "ue-icon-round",
+        "body": [
+            "<ul class=\"mue-nav-icon mue-fluid-3\">",
+            "   <li class=\"mue-btn\">",
+            "       <div class=\"mue-icon round primary\"><i class=\"icon-success\"><span class=\"mue-badges\">5</span></i></div>",
+            "       <div class=\"span1\">大圆图标</div>",
+            "   </li>",
+            "   <li class=\"mue-btn\">",
+            "       <div class=\"mue-icon round primary\"><i class=\"icon-success\"></i></div>",
+            "       <div class=\"span1\">大圆图标</div>",
+            "   </li>",
+            "   <li class=\"mue-btn\">",
+            "       <div class=\"mue-icon round primary\"><i class=\"icon-success\"></i></div>",
+            "       <div class=\"span1\">大圆图标</div>",
+            "   </li>",
+            "</ul>"
+        ]
+    },
+
+    "图标图片类九宫格": {
+        "prefix": "ue-icon-img",
+        "body": [
+            "<ul class=\"mue-nav-icon mue-fluid-3\">",
+            "   <li class=\"mue-btn\">",
+            "       <div class=\"icon\"><img src=\"images/icon-pyq.png\" alt=\"\"><span class=\"mue-badges\">5</span></div>",
+            "       <div class=\"span1\">图片导航</div>",
+            "   </li>",
+            "   <li class=\"mue-btn\">",
+            "       <div class=\"icon\"><img src=\"images/icon-pyq.png\" alt=\"\"></div>",
+            "       <div class=\"span1\">图片导航</div>",
+            "   </li>",
+            "   <li class=\"mue-btn\">",
+            "       <div class=\"icon\"><img src=\"images/icon-pyq.png\" alt=\"\"></div>",
+            "       <div class=\"span1\">图片导航</div>",
+            "   </li>",
+            "</ul>"
+        ]
+    },
+    "上传结构": {
+        "prefix": "ue-upload",
+        "description": "",
+        "body": [
+            "<!-- 上传的结构 -->",
+            "<div id=\"muePhoto\" class=\"mue-upload mue-fluid-space-4\">",
+            "    <div class=\"span1\">",
+            "        <div id=\"btnUpload\" class=\"mue-btn\">",
+            "            <i class=\"icon-plus large\"></i>",
+            "        </div>",
+            "    </div>",
+            "</div> "
+        ]
+    },
+    "表单-输入框": {
+        "prefix": "ue-form-input",
+        "description": "",
+        "body": [
+            "<li class=\"mue-btn mue-box clearactive\">",
+            "    <label class=\"mue-label\">描述:</label>",
+            "    <div class=\"span1\">",
+            "        <div class=\"mue-input user-input\">",
+            "            <input type=\"number\" value=\"\" placeholder=\"请输入\">",
+            "        </div>",
+            "    </div>",
+            "</li>"
+        ]
+    },
+    "表单-文本框": {
+        "prefix": "ue-form-textarea",
+        "description": "",
+        "body": [
+            "<h3 class=\"section-title\">描述</h3>",
+            "<ul class=\"mue-list\">",
+            "    <li class=\"mue-btn clearactive\">",
+            "        <div class=\"mue-input\">",
+            "            <textarea class=\"mue-input\" cols=\"30\" rows=\"4\" placeholder=\"请输入\"></textarea>",
+            "        </div>",
+            "    </li>",
+            "</ul>"
+        ]
+    },
+    "评分-组装代码": {
+        "prefix": "ue-part-rating",
+        "description": "",
+        "body": [
+            "<div class=\"mue-rating\"><span class=\"mue-rating-cell mue-rating-full\"></span><span class=\"mue-rating-cell mue-rating-full\"></span><span class=\"mue-rating-cell mue-rating-full\"></span><span class=\"mue-rating-cell mue-rating-half\"></span><span class=\"mue-rating-cell\"></span></div>"
+        ]
+    },
+    "日期-组装代码": {
+        "prefix": "ue-part-date",
+        "description": "",
+        "body": [
+            "<time class=\"mue-part-date\">2020-1-1</time>"
+        ]
+    },
+    "日期时间-组装代码": {
+        "prefix": "ue-part-datetime",
+        "description": "",
+        "body": [
+            "<span class=\"mue-part-datetime\"><time class=\"mue-part-date\">2020-1-1</time> <time class=\"mue-part-time\">00:00:00</time></span>"
+        ]
+    },
+    "时间-组装代码": {
+        "prefix": "ue-part-time",
+        "description": "",
+        "body": [
+            "<time class=\"mue-part-time\">00:00:00</time>"
+        ]
+    },
+    "手机号-组装代码": {
+        "prefix": "ue-part-phone",
+        "description": "",
+        "body": [
+            "<span class=\"mue-part-phone\">13800138000</span>"
+        ]
+    },
+    "价格-组装代码": {
+        "prefix": "ue-part-price",
+        "description": "",
+        "body": [
+            "<span class=\"mue-part-price\"><b class=\"symbol\">￥</b><b class=\"price\">100.00</b></span>"
+        ]
+    },
+    "块-组装代码": {
+        "prefix": "ue-part",
+        "description": "",
+        "body": [
+            "<div class=\"mue-part\">$1</div>"
+        ]
+    },
+    "行-组装代码": {
+        "prefix": "ue-part-line",
+        "description": "",
+        "body": [
+            "<div class=\"mue-part-line mue-box\">",
+            "   <div class=\"span1\">$1</div>",
+            "</div>"
+        ]
+    },
+    "图标文本-组装代码": {
+        "prefix": "ue-part-icon",
+        "description": "",
+        "body": [
+            "<div class=\"mue-part-line mue-box\">",
+            "   <div class=\"icon\"><img src=\"images/applogo.png\" alt=\"\"></div>",
+            "   <div class=\"span1\">Mue</div>",
+            "   <i class=\"icon-listright\"></i>",
+            "</div>"
+        ]
+    },
+    "图片多行-组装代码": {
+        "prefix": "ue-part-thumbnail",
+        "description": "",
+        "body": [
+            "<div class=\"mue-part-line mue-box\">",
+            "   <div class=\"mue-thumbnail\"><img src=\"images/applogo.png\" alt=\"\"></div>",
+            "   <div class=\"span1\">",
+            "       <h3 class=\"item-title\">我是标题</h3>",
+            "       <p class=\"item-text\">我是内容</p>",
+            "   </div>",
+            "   <i class=\"icon-listright\"></i>",
+            "</div>"
+        ]
+    },
+    "块标题-组装代码": {
+        "prefix": "ue-part-title",
+        "description": "",
+        "body": [
+            "<div class=\"mue-part-line mue-part-title\">块标题</div>"
+        ]
+    },
+    "多行-组装代码": {
+        "prefix": "ue-part-mline",
+        "description": "",
+        "body": [
+            "<div class=\"mue-part-line mue-box\">",
+            "   <div class=\"span1\">",
+            "       <h3 class=\"item-title\">我是标题</h3>",
+            "       <p class=\"item-text\">我是内容</p>",
+            "   </div>",
+            "   <i class=\"icon-listright\"></i>",
+            "</div>"
+        ]
+    },
+    "开始结束日期-组装代码": {
+        "prefix": "ue-part-dategroup",
+        "description": "",
+        "body": [
+            "<div class=\"mue-part-line mue-part-dategroup mue-box\">",
+            "   <div class=\"span1\">",
+            "       <span class=\"mue-part-datetime\"><time class=\"date\">2020-1-1</time> <time class=\"time\">00:00</time></span>",
+            "   </div>",
+            "   <div class=\"spliter\">——</div>",
+            "   <div class=\"span1\">",
+            "       <span class=\"mue-part-datetime\"><time class=\"date\">2020-1-1</time> <time class=\"time\">00:00</time></span>",
+            "   </div>",
+            "</div>"
+        ]
+    },
+    "设置文本": {
+        "prefix": "ue-b-text",
+        "description": "",
+        "body": [
+            "<b b-text=\"page.a\"></b>"
+        ]
+    },
+    "设置value": {
+        "prefix": "ue-b-value",
+        "description": "",
+        "body": [
+            "<input type=\"text\" b-value=\"page.a\" name=\"\" placeholder=\"请输入\" value=\"\" />"
+        ]
+    },
+    "双向绑定": {
+        "prefix": "ue-b-model",
+        "description": "",
+        "body": [
+            "<input type=\"text\" b-model=\"page.a\" name=\"\" placeholder=\"请输入\" value=\"\" />"
+        ]
+    },
+    "渲染HTML": {
+        "prefix": "ue-b-html",
+        "description": "",
+        "body": [
+            "<div b-html=\"page.a\"></div>"
+        ]
+    },
+    "显示隐藏": {
+        "prefix": "ue-b-show",
+        "description": "",
+        "body": [
+            "<b b-show=\"page.a\"></b>"
+        ]
+    },
+    "渲染模板": {
+        "prefix": "ue-b-template",
+        "description": "",
+        "body": [
+            "<ul b-template=\"page.tplA(page.a)\" class=\"mue-list\"></ul>"
+        ]
+    },
+    "绑定事件": {
+        "prefix": "ue-b-click",
+        "description": "",
+        "body": [
+            "<b b-click=\"page.a\"></b>"
+        ]
+    },
+    "绑定属性": {
+        "prefix": "ue-b-bind",
+        "description": "",
+        "body": [
+            "<b b-bind=\"page.a\"></b>"
+        ]
+    },
+    "绑定Class": {
+        "prefix": "ue-b-class",
+        "description": "",
+        "body": [
+            "<b b-class=\"page.a\"></b>"
+        ]
+    },
+    "绑定Style": {
+        "prefix": "ue-b-style",
+        "description": "",
+        "body": [
+            "<b b-style=\"page.a\"></b>"
+        ]
+    },
+    "楼层组件结构": {
+        "prefix": "ue-floor",
+        "description": "",
+        "body": [
+            "<!-- 菜单 html 对应的结构: -->",
+            "<ul id=\"floorNav\" class=\"mue-nav\">",
+            "    <li class=\"mue-btn active\">表单</li>",
+            "    <li class=\"mue-btn\">正文</li>",
+            "    <li class=\"mue-btn\">附件</li>",
+            "</ul>",
+            "<!-- 楼层 html 对应的结构: -->",
+            "<div id=\"uiFloor\" class=\"mue-floor\">",
+            "  <div class=\"mue-floor-main\">",
+            "      <div class=\"mue-panel mue-floor-item\">",
+            "      </div>",
+            "      <div class=\"mue-panel mue-floor-item\">",
+            "      </div>",
+            "      <div class=\"mue-panel mue-floor-item\">",
+            "      </div>",
+            "  </div>",
+            "  <div class=\"mue-floor-foot\"></div>",
+            "</div>"
+        ]
+    },
+    "组件标签": {
+        "prefix": "ue-component",
+        "description": "",
+        "body": [
+            "<component id=\"$1\" name=\"pages/components/\"></component>"
+        ]
+    },
+    "级联控件结构": {
+        "prefix": "ue-levelselect",
+        "description": "",
+        "body": [
+            "<!-- 级联菜单 html 对应的结构: -->",
+            "<ul class=\"mue-list\">",
+            "    <li class=\"mue-btn mue-box clearactive\">",
+            "        <div class=\"mue-label\">所在地区</div>",
+            "        <div class=\"span1\">",
+            "            <div id=\"chooseCity\" class=\"mue-box\">",
+            "                <div class=\"selected-val\"></div>",
+            "                <div class=\"selected-val\"></div>",
+            "                <div class=\"selected-val\"></div>",
+            "            </div>",
+            "        </div>",
+            "    </li>",
+            "</ul> "
+        ]
+    }
+
+}

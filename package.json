@@ -1,0 +1,26 @@
+{
+    "name": "muejs-snippet",
+    "displayName": "muejs-snippet",
+    "description": "muejs-snippet is a snippet for Mue webapp frame.",
+    "version": "2.0.0",
+    "publisher": "muewang",
+    "icon": "images/logo.png",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "repository": "https://github.com/muejs/Muejs-Snippet-Vscode",
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [{
+                "language": "html",
+                "path": "./snippets/mue-html-snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/mue-js-snippets.json"
+            }
+        ]
+    }
+}
